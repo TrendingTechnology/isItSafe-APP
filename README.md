@@ -91,6 +91,6 @@ Nós somos um projeto Open-Source voltado para a comunidade e adoraríamos que a
 
 ## ℹ️ Info
 - [CODE_OF_CONDUCT.md]()
-- [LICENCE.md]()
+- [LICENCE.md](https://github.com/Is-It-Safe/isItSafe-APP/blob/main/LICENSE.md)
 - [Repositório da API](https://github.com/Is-It-Safe/isItSafe-API)
 
