@@ -57,12 +57,6 @@
 
 [Linux](https://flutter.dev/docs/get-started/install/linux "Linux")
 
-#### 🧮 API
-
-[Java SDK](https://www.oracle.com/java/ "Java SDK")
-
-[PostgreSQL](https://www.postgresql.org/download/ "PostgreSQL")
-
 ### 🏃‍♂️ Run:
 1. Faça o clone do repositório.
 2. Rodar os comandos abaixo:
@@ -94,7 +88,7 @@ Se você faz parte da comunidade **LGBTQ+** 🏳️‍🌈, tem conhecimentos em
 
 
 ## ℹ️ Info
-- [CODE_OF_CONDUCT.md]()
+- [CODE_OF_CONDUCT.md](https://github.com/Is-It-Safe/isItSafe-APP/blob/main/CODE_OF_CONDUCT.md)
 - [LICENCE.md](https://github.com/Is-It-Safe/isItSafe-APP/blob/main/LICENSE.md)
 - [Repositório da API](https://github.com/Is-It-Safe/isItSafe-API)
 
