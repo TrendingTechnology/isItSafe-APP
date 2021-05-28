@@ -19,7 +19,7 @@ Para iniciar, primeiramente **faça um fork** do projeto. Vamos seguir com os pa
 
 E depois disso tudo… parabéns!! Seu pull request foi aceito!!
 
-Nós agradecemos muito a sua contribuição. É muito importante para nós que a nossa aplicação continue crescendo e possamos virar referência dentro da comunidade **LGBTQ+**🏳️‍🌈 para garantir a segurança de muitos e você faz parte desse processo!!!
+Nós agradecemos muito a sua contribuição. É muito importante para nós que a nossa aplicação continue crescendo e possamos virar referência dentro da comunidade **LGBTQ+** 🏳️‍🌈 para garantir a segurança de muitos e você faz parte desse processo!!!
 
 
 
