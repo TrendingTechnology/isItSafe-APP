@@ -3,7 +3,7 @@
 ## Não encontra uma issue? Abra uma!
 Se você se deparar com algum bug ou quiser sugerir alguma feature, você pode abrir uma issue usando um dos nossos [templates](https://github.com/Is-It-Safe/isItSafe-APP/issues/new/choose "templates"). A partir da issue, nossa equipe vai discutir sobre o problema ou sugestão que você está trazendo.
 
-**Nota: ** Nós não aceitamos contribuições na nossa [API](https://github.com/Is-It-Safe/isItSafe-API "API"). Mas, se você encontrar alguma incoerência, você é mais que bem-vinde a abrir uma issue no repositório da [API](https://github.com/Is-It-Safe/isItSafe-API "API").
+**Nota:** Nós não aceitamos contribuições na nossa [API](https://github.com/Is-It-Safe/isItSafe-API "API"). Mas, se você encontrar alguma incoerência, você é mais que bem-vinde a abrir uma issue no repositório da [API](https://github.com/Is-It-Safe/isItSafe-API "API").
 
 ## Pronte para fazer mudança? Faça um fork!
 Para iniciar, primeiramente **faça um fork** do projeto. Vamos seguir com os passos abaixo:
