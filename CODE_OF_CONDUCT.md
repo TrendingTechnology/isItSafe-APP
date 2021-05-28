@@ -52,15 +52,15 @@ de ações.
 
 ### 3. Banimento temporário
 
-** Impacto na comunidade: ** Uma violação grave dos padrões da comunidade, incluindo comportamento inadequado sustentado.
+**Impacto na comunidade:** Uma violação grave dos padrões da comunidade, incluindo comportamento inadequado sustentado.
 
-** Consequência: ** O banimento temporário de qualquer tipo de interação ou público comunicação com a comunidade por um determinado período de tempo. Sem público ou interação privada com as pessoas envolvidas, incluindo interação não solicitada com aqueles que aplicam o Código de Conduta, é permitido durante este período. **A violação desses termos pode levar ao banimento permanente.**
+**Consequência:** O banimento temporário de qualquer tipo de interação ou público comunicação com a comunidade por um determinado período de tempo. Sem público ou interação privada com as pessoas envolvidas, incluindo interação não solicitada com aqueles que aplicam o Código de Conduta, é permitido durante este período. **A violação desses termos pode levar ao banimento permanente.**
 
 ### 4. Banimento Permanente
 
-** Impacto na comunidade: ** Demonstrando um padrão de violação da comunidade padrões, incluindo comportamento inadequado sustentado, assédio de um indivíduo, ou agressão ou depreciação de classes de indivíduos.
+**Impacto na comunidade:** Demonstrando um padrão de violação da comunidade padrões, incluindo comportamento inadequado sustentado, assédio de um indivíduo, ou agressão ou depreciação de classes de indivíduos.
 
-** Consequência: **O banimento permanente de qualquer tipo de interação pública dentro da comunidade.
+**Consequência:** O banimento permanente de qualquer tipo de interação pública dentro da comunidade.
 
 ## Atribuição
 
@@ -68,6 +68,8 @@ Este Código de Conduta foi adaptado do [Contrato do Colaborador] [página inici
 
 As diretrizes de impacto na comunidade foram inspiradas por [Escada de aplicação do código de conduta da Mozilla] [Mozilla CoC].
 
-Para respostas a perguntas comuns informações sobre este código de conduta, consulte o FAQ em [https://www.contributor-covenant.org/faq][FAQ]. Traduções estão disponíveis [aqui](https://www.contributor-covenant.org/translations).
+Para respostas a perguntas comuns informações sobre este código de conduta, consulte o FAQ [aqui](https://www.contributor-covenant.org/faq). Traduções estão disponíveis [aqui](https://www.contributor-covenant.org/translations).
 
+
+[Mozilla CoC]: https://github.com/mozilla/diversity
 
