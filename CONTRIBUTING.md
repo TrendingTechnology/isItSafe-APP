@@ -17,6 +17,8 @@ Para iniciar, primeiramente **faça um fork** do projeto. Vamos seguir com os pa
 
 **Nota:** Você teve algum conflito no pull request? Dá uma olhada no [tutorial do git](https://lab.github.com/githubtraining/managing-merge-conflicts "tutorial do git") em como resolvê-los.
 
+**Nota 2:** Para fazer modificações, é preciso que você crie/use uma chave pessoal para o google maps.
+
 E depois disso tudo… parabéns!! Seu pull request foi aceito!!
 
 Nós agradecemos muito a sua contribuição. É muito importante para nós que a nossa aplicação continue crescendo e possamos virar referência dentro da comunidade **LGBTQ+** 🏳️‍🌈 para garantir a segurança de muitos e você faz parte desse processo!!!
