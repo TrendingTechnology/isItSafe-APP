@@ -77,6 +77,8 @@ Nós somos um projeto Open-Source voltado para a comunidade e adoraríamos que a
 
 Se você faz parte da comunidade **LGBTQ+** 🏳️‍🌈, tem conhecimentos em desenvolvimento e quer contribuir de forma mais significativa, nos mande um [email](mailto:isitsafe.contact@gmail.com "email") ou uma dm no nosso [Twitter](https://twitter.com/IsItSafeApp "Twitter") para conversarmos mais sobre isso.
 
+Caso queira fazer parte da equipe de desenvolvimento, acesse a nossa página na Atados [aqui](https://www.atados.com.br/ong/is-it-safe) e fique à vontade para aplicar para qualquer uma das vagas disponíveis.
+
 ## ✍️ Autores
 | Nome |  Twitter |  GitHub | Função |
 | ------------ | ------------ | ------------ |  ------------ |
