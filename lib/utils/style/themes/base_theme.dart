@@ -5,50 +5,63 @@ import '../colors.dart';
 
 ThemeData baseTheme = ThemeData(
   primaryColor: primaryColor,
-  primaryColorLight: primaryColorLight,
-  primaryColorDark: primaryColorDark,
   accentColor: accentColor,
-  splashColor: splashColor,
-  disabledColor: disabledColor,
-  dividerColor: dividerColor,
-  errorColor: errorColor,
-  backgroundColor: primaryColorDark,
+  backgroundColor: backgroundColor,
   scaffoldBackgroundColor: backgroundColor,
-  buttonColor: errorColor,
+  errorColor: errorColor,
 
   /// Sub themes
   textTheme: _textTheme,
   iconTheme: _iconTheme,
   inputDecorationTheme: _inputDecoration,
-  dividerTheme: _dividerTheme,
 );
 
 TextTheme _textTheme = TextTheme(
-  headline2: GoogleFonts.raleway(
+  headline1: GoogleFonts.openSans(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  headline4: GoogleFonts.raleway(
+  headline2: GoogleFonts.openSans(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  bodyText1: GoogleFonts.raleway(
+  headline3: GoogleFonts.openSans(
+    color: primaryTextColor,
+    fontWeight: FontWeight.w400,
+  ),
+  headline4: GoogleFonts.openSans(
+    color: primaryTextColor,
+    fontWeight: FontWeight.w400,
+  ),
+  headline5: GoogleFonts.openSans(
+    color: primaryTextColor,
+    fontWeight: FontWeight.w400,
+  ),
+  headline6: GoogleFonts.openSans(
+    color: primaryTextColor,
+    fontWeight: FontWeight.w400,
+  ),
+  bodyText1: GoogleFonts.openSans(
     color: primaryTextColor,
     fontWeight: FontWeight.w200,
   ),
-  bodyText2: GoogleFonts.raleway(
+  bodyText2: GoogleFonts.openSans(
     color: primaryTextColor,
     fontWeight: FontWeight.w200,
   ),
-  button: GoogleFonts.raleway(
-    color: primaryColor,
+  subtitle1: GoogleFonts.openSans(
+    color: primaryTextColor,
+    fontWeight: FontWeight.w400,
+  ),
+  button: GoogleFonts.openSans(
+    color: primaryTextColor,
     fontWeight: FontWeight.bold,
   ),
 );
 
 IconThemeData _iconTheme = IconThemeData(
-  color: accentColor,
-  size: 100,
+  color: whiteColor,
+  size: 25,
 );
 
 InputDecorationTheme _inputDecoration = InputDecorationTheme(
@@ -56,9 +69,14 @@ InputDecorationTheme _inputDecoration = InputDecorationTheme(
     color: primaryTextColor,
     fontWeight: FontWeight.w500,
   ),
+  disabledBorder: OutlineInputBorder(
+    borderSide: BorderSide(
+      color: accentColor,
+    ),
+  ),
   border: OutlineInputBorder(
     borderSide: BorderSide(
-      color: primaryColorLight,
+      color: accentColor,
     ),
   ),
   enabledBorder: OutlineInputBorder(
@@ -66,10 +84,14 @@ InputDecorationTheme _inputDecoration = InputDecorationTheme(
       color: accentColor,
     ),
   ),
-);
-
-DividerThemeData _dividerTheme = DividerThemeData(
-  color: dividerColor,
-  indent: 30,
-  endIndent: 30,
+  errorBorder: OutlineInputBorder(
+    borderSide: BorderSide(
+      color: errorColor,
+    ),
+  ),
+  focusedBorder: OutlineInputBorder(
+    borderSide: BorderSide(
+      color: accentColor,
+    ),
+  ),
 );

@@ -7,32 +7,35 @@ class CustomInterceptors extends InterceptorsWrapper {
   CustomInterceptors(this._dio);
 
   @override
-  Future onRequest(RequestOptions options) async {
+  Future onRequest(RequestOptions options,
+      RequestInterceptorHandler interceptorHandler) async {
     if (kDebugMode) {
       _printRequest(options);
     }
-    return super.onRequest(options);
+    return super.onRequest(options, interceptorHandler);
   }
 
   @override
-  Future onResponse(Response response) async {
+  Future onResponse(Response response,
+      ResponseInterceptorHandler responseInterceptorHandler) async {
     if (kDebugMode) {
       _printResponse(response);
     }
-    return super.onResponse(response);
+    return super.onResponse(response, responseInterceptorHandler);
   }
 
   @override
-  Future onError(DioError err) {
+  onError(DioError err, ErrorInterceptorHandler errorInterceptorHandler) {
     if (kDebugMode) {
       _printError(err);
     }
-    return super.onError(err);
+    return super.onError(err, errorInterceptorHandler);
   }
 
   void _printError(DioError err) {
     print("----------> INIT ERROR RESPONSE <----------");
-    print("ERROR[${err?.response?.statusCode}] => PATH: ${err?.request?.path}");
+    print(
+        "ERROR[${err?.response?.statusCode}] => PATH: ${err?.requestOptions?.path}");
     print("BODY => ${err?.response?.data}");
     print("-----> END ERROR RESPONSE <----------");
   }
@@ -51,7 +54,7 @@ class CustomInterceptors extends InterceptorsWrapper {
 
   void _printResponse(Response response) {
     print("----------> INIT API RESPONSE <----------");
-    print("${response?.request?.path}");
+    print("${response?.requestOptions?.path}");
     print("STATUS CODE => ${response?.statusCode}");
     print("HEADERS =>");
     response.headers?.forEach((k, v) => print('$k: $v'));
