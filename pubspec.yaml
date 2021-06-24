@@ -35,7 +35,7 @@ dependencies:
   smooth_page_indicator: 0.3.0-nullsafety.0
   # Used to set SVG images
   flutter_svg: ^0.22.0
-
+  # Used to provide base platform interface for flutter
   plugin_platform_interface: ^2.0.0
 
 dev_dependencies:
