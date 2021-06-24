@@ -109,7 +109,7 @@ class APIService {
   }
 
   _returnResponse(Response response) {
-    if (response.statusCode >= 200 && response.statusCode <= 299) {
+    if (response.statusCode! >= 200 && response.statusCode! <= 299) {
       try {
         var result = json.decode(response.data.toString());
         return result;
@@ -118,7 +118,7 @@ class APIService {
           return response.data;
         } catch (e) {
           try {
-            return (response.data as List);
+            return (response.data as List?);
           } catch (e) {
             print(e.toString());
             return Map<String, dynamic>();

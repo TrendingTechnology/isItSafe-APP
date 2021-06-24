@@ -4,7 +4,10 @@ class AppException extends DioError {
   final _message;
   final _prefix;
 
-  AppException([this._message, this._prefix]);
+  AppException([this._message, this._prefix])
+      : super(
+          requestOptions: RequestOptions(path: ""),
+        );
 
   String toString() {
     return "$_prefix $_message";
@@ -12,5 +15,5 @@ class AppException extends DioError {
 }
 
 class FetchDataException extends AppException {
-  FetchDataException([String json]) : super(json, "");
+  FetchDataException([String? json]) : super(json, "");
 }

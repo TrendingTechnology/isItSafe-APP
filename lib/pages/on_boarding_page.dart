@@ -4,7 +4,7 @@ import 'package:is_it_safe/generated/l10n.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingPage extends StatefulWidget {
-  const OnBoardingPage({Key key}) : super(key: key);
+  const OnBoardingPage({Key? key}) : super(key: key);
 
   @override
   _OnBoardingPageState createState() => _OnBoardingPageState();
@@ -61,22 +61,22 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       text: TextSpan(
         children: [
           TextSpan(
-            text: "${S.of(context).textOnBoarding1_0} ",
+            text: "${S.of(context)!.textOnBoarding1_0} ",
             style: Theme.of(context).textTheme.headline4,
           ),
           TextSpan(
-            text: "${S.of(context).textOnBoarding1_1} ",
-            style: Theme.of(context).textTheme.headline4.copyWith(
+            text: "${S.of(context)!.textOnBoarding1_1} ",
+            style: Theme.of(context).textTheme.headline4!.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
           ),
           TextSpan(
-            text: "${S.of(context).textOnBoarding1_2} ",
+            text: "${S.of(context)!.textOnBoarding1_2} ",
             style: Theme.of(context).textTheme.headline4,
           ),
           TextSpan(
-            text: "${S.of(context).textOnBoarding1_3}.",
-            style: Theme.of(context).textTheme.headline4.copyWith(
+            text: "${S.of(context)!.textOnBoarding1_3}.",
+            style: Theme.of(context).textTheme.headline4!.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
           ),
@@ -90,12 +90,12 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       text: TextSpan(
         children: [
           TextSpan(
-            text: "${S.of(context).textOnBoarding2_0} ",
+            text: "${S.of(context)!.textOnBoarding2_0} ",
             style: Theme.of(context).textTheme.headline4,
           ),
           TextSpan(
-            text: "${S.of(context).textOnBoarding2_1}.",
-            style: Theme.of(context).textTheme.headline4.copyWith(
+            text: "${S.of(context)!.textOnBoarding2_1}.",
+            style: Theme.of(context).textTheme.headline4!.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
           ),
@@ -109,17 +109,17 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       text: TextSpan(
         children: [
           TextSpan(
-            text: "${S.of(context).textOnBoarding3_0} ",
+            text: "${S.of(context)!.textOnBoarding3_0} ",
             style: Theme.of(context).textTheme.headline4,
           ),
           TextSpan(
-            text: "${S.of(context).textOnBoarding3_1} ",
-            style: Theme.of(context).textTheme.headline4.copyWith(
+            text: "${S.of(context)!.textOnBoarding3_1} ",
+            style: Theme.of(context).textTheme.headline4!.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
           ),
           TextSpan(
-            text: "${S.of(context).textOnBoarding3_2}.",
+            text: "${S.of(context)!.textOnBoarding3_2}.",
             style: Theme.of(context).textTheme.headline4,
           ),
         ],

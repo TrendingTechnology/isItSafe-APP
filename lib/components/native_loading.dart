@@ -4,10 +4,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NativeLoading extends StatelessWidget {
-  final bool animating;
+  final bool? animating;
 
   NativeLoading({
-    Key key,
+    Key? key,
     this.animating,
   }) : super(key: key);
 
