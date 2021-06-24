@@ -6,12 +6,12 @@ import 'package:is_it_safe/utils/config/custom_shared_preferences.dart';
 import 'package:is_it_safe/utils/style/colors.dart';
 
 class OnBoardingPageTemplate extends StatelessWidget {
-  final String imagePath;
-  final RichText text;
-  final bool haveButton;
-  final Widget button;
+  final String? imagePath;
+  final RichText? text;
+  final bool? haveButton;
+  final Widget? button;
   const OnBoardingPageTemplate({
-    Key key,
+    Key? key,
     this.imagePath,
     this.text,
     this.button,
@@ -26,7 +26,7 @@ class OnBoardingPageTemplate extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(imagePath),
+                image: AssetImage(imagePath!),
                 fit: BoxFit.cover,
               ),
             ),
@@ -35,10 +35,10 @@ class OnBoardingPageTemplate extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Colors.grey[800],
+                  Colors.grey[800]!,
                   Colors.transparent,
                   Colors.transparent,
-                  Colors.grey[900],
+                  Colors.grey[900]!,
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -78,7 +78,7 @@ class OnBoardingPageTemplate extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(32, 0, 32, 72),
                   child: text,
                 ),
-                if (haveButton)
+                if (haveButton!)
                   Padding(
                     padding: const EdgeInsets.only(bottom: 64),
                     child: GestureDetector(
@@ -104,7 +104,7 @@ class OnBoardingPageTemplate extends StatelessWidget {
                             ),
                           ),
                           child: Text(
-                            S.of(context).textLogin,
+                            S.of(context)!.textLogin,
                             style: Theme.of(context).textTheme.subtitle1,
                             textAlign: TextAlign.center,
                           ),

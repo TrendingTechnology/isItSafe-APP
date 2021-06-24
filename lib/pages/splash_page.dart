@@ -87,7 +87,7 @@ class _SplashPageState extends State<SplashPage> {
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: Text(
-        S.of(context).appTitle,
+        S.of(context)!.appTitle,
         textAlign: TextAlign.center,
         style: GoogleFonts.poppins(
           color: primaryTextColor,

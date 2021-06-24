@@ -1,7 +1,7 @@
 class BaseResponse<T> {
   Status status;
-  T data;
-  String message;
+  T? data;
+  String? message;
 
   BaseResponse.loading() : status = Status.LOADING;
 

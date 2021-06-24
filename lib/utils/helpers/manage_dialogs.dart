@@ -13,7 +13,7 @@ class ManagerDialogs {
           title: Text("Atenção!"),
           content: Text(message),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               child: Text("Ok"),
               onPressed: () {
                 Navigator.pop(context);
@@ -29,7 +29,7 @@ class ManagerDialogs {
           title: Text("Atenção!"),
           content: Text(message),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               child: Text("Ok"),
               onPressed: () {
                 Navigator.pop(context);
