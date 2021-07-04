@@ -22,9 +22,15 @@ class IsItSafeButtonComponent extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: color ?? backgroundColor,
-          border: Border.all(width: 1, color: accentColor),
+          color: color ?? backgroundContainerColor,
           borderRadius: BorderRadius.circular(10),
+          boxShadow: [
+            BoxShadow(
+                color: Colors.white12,
+                offset: Offset(0, 4),
+                blurRadius: 10,
+                spreadRadius: 5)
+          ],
         ),
         child: Center(
           child: Text(

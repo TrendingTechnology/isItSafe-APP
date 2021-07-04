@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:is_it_safe/components/isItsafeButtonComponent.dart';
 import 'package:is_it_safe/generated/l10n.dart';
@@ -20,18 +22,16 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Container(
-          child: Padding(
+      body: Center(
+        child: SingleChildScrollView(
+          child: Container(
             padding: EdgeInsets.only(right: 22.0, left: 22.0),
             child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(
-                    top: 68,
-                  ),
+                  padding: EdgeInsets.only(bottom: 20.0),
                   child: Align(
-                    alignment: Alignment.topLeft,
+                    alignment: Alignment.centerLeft,
                     child: RichText(
                       text: TextSpan(
                         children: [
@@ -47,40 +47,50 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
+                FormComponent(
+                    formKey: _formKey,
+                    userNameController: _userNameController,
+                    passwordController: _passwordController),
                 Padding(
-                  padding: const EdgeInsets.only(top: 170.0),
-                  child: FormComponent(
-                      formKey: _formKey,
-                      userNameController: _userNameController,
-                      passwordController: _passwordController),
-                ),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: TextButton(
-                    child: Text(
-                      S.of(context).loginButtonText1_0,
-                      style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                  padding: const EdgeInsets.only(top: 12.0, bottom: 12.0),
+                  child: Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      child: Text(
+                        S.of(context).loginButtonText1_0,
+                        style: Theme.of(context).textTheme.subtitle2!.copyWith(
                             color: whiteColor,
-                          ),
+                            decoration: TextDecoration.underline),
+                      ),
+                      onPressed: () => null,
                     ),
-                    onPressed: () => null,
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 32.0),
-                  child: IsItSafeButtonComponent(
-                    buttonText: S.of(context).loginButtonText1_1,
-                    buttonFunction: () => null,
-                    whiteFont: true,
-                    color: accentColor,
-                  ),
+                IsItSafeButtonComponent(
+                  buttonText: S.of(context).loginButtonText1_1,
+                  buttonFunction: () => null,
+                  whiteFont: true,
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 28.0, bottom: 20.0),
-                  child: IsItSafeButtonComponent(
-                    buttonText: S.of(context).loginButtonText1_2,
-                    buttonFunction: () => null,
-                    whiteFont: false,
+                  padding: EdgeInsets.only(top: 12.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        S.of(context).loginButtonText1_2,
+                        style: TextStyle(
+                            color: whiteColor, fontWeight: FontWeight.bold),
+                      ),
+                      TextButton(
+                        onPressed: () => null,
+                        child: Text(
+                          S.of(context).loginButtonText1_3,
+                          style: TextStyle(
+                              color: accentColor,
+                              decoration: TextDecoration.underline),
+                        ),
+                      )
+                    ],
                   ),
                 )
               ],

@@ -18,5 +18,6 @@
     "loginFormFieldTip2_1":"Por favor digite uma senha valida",
     "loginButtonText1_0":"Esqueceu sua senha?",
     "loginButtonText1_1":"Login",
-    "loginButtonText1_2":"Cadastrar"
+    "loginButtonText1_2":"Não possui uma conta?",
+    "loginButtonText1_3":"Cadastre-se."
 }

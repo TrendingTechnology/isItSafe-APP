@@ -240,11 +240,21 @@ class S {
     );
   }
 
-  /// `Register`
+  /// `Don't have an account?`
   String get loginButtonText1_2 {
     return Intl.message(
-      'Register',
+      'Don\'t have an account?',
       name: 'loginButtonText1_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up now.`
+  String get loginButtonText1_3 {
+    return Intl.message(
+      'Sign Up now.',
+      name: 'loginButtonText1_3',
       desc: '',
       args: [],
     );

@@ -25,7 +25,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginButtonText1_0":
             MessageLookupByLibrary.simpleMessage("Esqueceu sua senha?"),
         "loginButtonText1_1": MessageLookupByLibrary.simpleMessage("Login"),
-        "loginButtonText1_2": MessageLookupByLibrary.simpleMessage("Cadastrar"),
+        "loginButtonText1_2":
+            MessageLookupByLibrary.simpleMessage("Não possui uma conta?"),
+        "loginButtonText1_3":
+            MessageLookupByLibrary.simpleMessage("Cadastre-se."),
         "loginFormFieldTip1_0": MessageLookupByLibrary.simpleMessage("Usuário"),
         "loginFormFieldTip1_1": MessageLookupByLibrary.simpleMessage("Senha"),
         "loginFormFieldTip2_0": MessageLookupByLibrary.simpleMessage(
