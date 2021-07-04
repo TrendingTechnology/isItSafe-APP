@@ -26,10 +26,10 @@ class IsItSafeButtonComponent extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-                color: Colors.white12,
-                offset: Offset(0, 4),
+                color: accentColor.withOpacity(0.2),
+                offset: Offset(4, 4),
                 blurRadius: 10,
-                spreadRadius: 5)
+                spreadRadius: 2)
           ],
         ),
         child: Center(
