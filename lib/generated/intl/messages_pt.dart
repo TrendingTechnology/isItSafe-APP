@@ -36,7 +36,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginFormFieldTip2_1": MessageLookupByLibrary.simpleMessage(
             "Por favor digite uma senha valida"),
         "loginPageGreetText1_0":
-            MessageLookupByLibrary.simpleMessage("Bem-vindo!"),
+            MessageLookupByLibrary.simpleMessage("Vamos entrar!"),
         "loginPageGreetText1_1":
             MessageLookupByLibrary.simpleMessage("Sentimos sua falta!"),
         "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
