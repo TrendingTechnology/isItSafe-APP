@@ -104,7 +104,7 @@ class OnBoardingPageTemplate extends StatelessWidget {
                             ),
                           ),
                           child: Text(
-                            S.of(context)!.textLogin,
+                            S.of(context).textLogin,
                             style: Theme.of(context).textTheme.subtitle1,
                             textAlign: TextAlign.center,
                           ),
