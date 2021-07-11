@@ -159,6 +159,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Let's get you in.`
+  String get loginPageGreetText1_0 {
+    return Intl.message(
+      'Let\'s get you in.',
+      name: 'loginPageGreetText1_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We missed you!`
+  String get loginPageGreetText1_1 {
+    return Intl.message(
+      'We missed you!',
+      name: 'loginPageGreetText1_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Username`
+  String get loginFormFieldTip1_0 {
+    return Intl.message(
+      'Username',
+      name: 'loginFormFieldTip1_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get loginFormFieldTip1_1 {
+    return Intl.message(
+      'Password',
+      name: 'loginFormFieldTip1_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please type in your username`
+  String get loginFormFieldTip2_0 {
+    return Intl.message(
+      'Please type in your username',
+      name: 'loginFormFieldTip2_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please type in a valid passowrd`
+  String get loginFormFieldTip2_1 {
+    return Intl.message(
+      'Please type in a valid passowrd',
+      name: 'loginFormFieldTip2_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot the password?`
+  String get loginButtonText1_0 {
+    return Intl.message(
+      'Forgot the password?',
+      name: 'loginButtonText1_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get loginButtonText1_1 {
+    return Intl.message(
+      'Login',
+      name: 'loginButtonText1_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't have an account?`
+  String get loginButtonText1_2 {
+    return Intl.message(
+      'Don\'t have an account?',
+      name: 'loginButtonText1_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up now.`
+  String get loginButtonText1_3 {
+    return Intl.message(
+      'Sign Up now.',
+      name: 'loginButtonText1_3',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

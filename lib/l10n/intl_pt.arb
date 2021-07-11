@@ -9,5 +9,15 @@
     "textOnBoarding2_1":"segurança",
     "textOnBoarding3_0":"Descreva suas",
     "textOnBoarding3_1":"experiências",
-    "textOnBoarding3_2":"e avalie locais"
+    "textOnBoarding3_2":"e avalie locais",
+    "loginPageGreetText1_0":"Vamos entrar!",
+    "loginPageGreetText1_1":"Sentimos sua falta!",
+    "loginFormFieldTip1_0":"Usuário",
+    "loginFormFieldTip1_1":"Senha",
+    "loginFormFieldTip2_0":"Por favor digite seu nome de usuário",
+    "loginFormFieldTip2_1":"Por favor digite uma senha valida",
+    "loginButtonText1_0":"Esqueceu sua senha?",
+    "loginButtonText1_1":"Login",
+    "loginButtonText1_2":"Não possui uma conta?",
+    "loginButtonText1_3":"Cadastre-se."
 }
