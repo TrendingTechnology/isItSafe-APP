@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "appTitle": MessageLookupByLibrary.simpleMessage("Is It Safe?"),
+
         "loginButtonText1_0":
             MessageLookupByLibrary.simpleMessage("Esqueceu sua senha?"),
         "loginButtonText1_1": MessageLookupByLibrary.simpleMessage("Login"),
@@ -39,6 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Vamos entrar!"),
         "loginPageGreetText1_1":
             MessageLookupByLibrary.simpleMessage("Sentimos sua falta!"),
+
         "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
         "textOnBoarding1_0": MessageLookupByLibrary.simpleMessage("Foco em"),
         "textOnBoarding1_1": MessageLookupByLibrary.simpleMessage("segurança"),
