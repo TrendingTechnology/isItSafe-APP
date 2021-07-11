@@ -1,7 +1,7 @@
 ---
 name: Solicitação de feature
 about: Sugira uma ideia para este projeto
-title: "[SOLICITAÇÃO DE FEATURE]..."
+title: "[SOLICITAÇÃO DE FEATURE] - "
 labels: solicitar feature
 assignees: ''
 
