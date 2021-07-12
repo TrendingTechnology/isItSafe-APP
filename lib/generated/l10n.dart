@@ -161,100 +161,110 @@ class S {
   }
 
   /// `Let's get you in.`
-  String get loginPageGreetText1_0 {
+  String get loginPageTitle {
     return Intl.message(
       'Let\'s get you in.',
-      name: 'loginPageGreetText1_0',
+      name: 'loginPageTitle',
       desc: '',
       args: [],
     );
   }
 
   /// `We missed you!`
-  String get loginPageGreetText1_1 {
+  String get loginPageSubtitle {
     return Intl.message(
       'We missed you!',
-      name: 'loginPageGreetText1_1',
+      name: 'loginPageSubtitle',
       desc: '',
       args: [],
     );
   }
 
   /// `Username`
-  String get loginFormFieldTip1_0 {
+  String get username {
     return Intl.message(
       'Username',
-      name: 'loginFormFieldTip1_0',
+      name: 'username',
       desc: '',
       args: [],
     );
   }
 
   /// `Password`
-  String get loginFormFieldTip1_1 {
+  String get password {
     return Intl.message(
       'Password',
-      name: 'loginFormFieldTip1_1',
+      name: 'password',
       desc: '',
       args: [],
     );
   }
 
   /// `Please type in your username`
-  String get loginFormFieldTip2_0 {
+  String get loginErrorUsername {
     return Intl.message(
       'Please type in your username',
-      name: 'loginFormFieldTip2_0',
+      name: 'loginErrorUsername',
       desc: '',
       args: [],
     );
   }
 
   /// `Please type in a valid passowrd`
-  String get loginFormFieldTip2_1 {
+  String get loginErrorPassword {
     return Intl.message(
       'Please type in a valid passowrd',
-      name: 'loginFormFieldTip2_1',
+      name: 'loginErrorPassword',
       desc: '',
       args: [],
     );
   }
 
   /// `Forgot the password?`
-  String get loginButtonText1_0 {
+  String get forgotThePasswordBtn {
     return Intl.message(
       'Forgot the password?',
-      name: 'loginButtonText1_0',
+      name: 'forgotThePasswordBtn',
       desc: '',
       args: [],
     );
   }
 
   /// `Login`
-  String get loginButtonText1_1 {
+  String get login {
     return Intl.message(
       'Login',
-      name: 'loginButtonText1_1',
+      name: 'login',
       desc: '',
       args: [],
     );
   }
 
   /// `Don't have an account?`
-  String get loginButtonText1_2 {
+  String get dontHaveAccount {
     return Intl.message(
       'Don\'t have an account?',
-      name: 'loginButtonText1_2',
+      name: 'dontHaveAccount',
       desc: '',
       args: [],
     );
   }
 
   /// `Sign Up now.`
-  String get loginButtonText1_3 {
+  String get signUp {
     return Intl.message(
       'Sign Up now.',
-      name: 'loginButtonText1_3',
+      name: 'signUp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wrong fields! Try again.`
+  String get errorToLogin {
+    return Intl.message(
+      'Wrong fields! Try again.',
+      name: 'errorToLogin',
       desc: '',
       args: [],
     );

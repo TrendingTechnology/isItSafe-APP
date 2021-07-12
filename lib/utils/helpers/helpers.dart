@@ -1,6 +1,6 @@
 class Helpers {
-  static bool validateName(String? name) {
-    if (name!.isEmpty) {
+  static bool validateName(String name) {
+    if (name.isEmpty) {
       return false;
     }
     return true;

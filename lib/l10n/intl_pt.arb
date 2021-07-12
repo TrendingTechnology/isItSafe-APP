@@ -10,14 +10,18 @@
     "textOnBoarding3_0":"Descreva suas",
     "textOnBoarding3_1":"experiências",
     "textOnBoarding3_2":"e avalie locais",
-    "loginPageGreetText1_0":"Vamos entrar!",
-    "loginPageGreetText1_1":"Sentimos sua falta!",
-    "loginFormFieldTip1_0":"Usuário",
-    "loginFormFieldTip1_1":"Senha",
-    "loginFormFieldTip2_0":"Por favor digite seu nome de usuário",
-    "loginFormFieldTip2_1":"Por favor digite uma senha valida",
-    "loginButtonText1_0":"Esqueceu sua senha?",
-    "loginButtonText1_1":"Login",
-    "loginButtonText1_2":"Não possui uma conta?",
-    "loginButtonText1_3":"Cadastre-se."
+
+
+    "loginPageTitle":"Vamos entrar.",
+    "loginPageSubtitle":"Sentimos sua falta!",
+    "username":"Usuário",
+    "password":"Senha",
+    "loginErrorUsername":"Por favor digite um nome de usuário válido",
+    "loginErrorPassword":"Por favor digite uma senha válida",
+    "forgotThePasswordBtn":"Esqueceu sua senha?",
+    "login":"Login",
+    "dontHaveAccount":"Não possui uma conta?",
+    "signUp":"Cadastre-se.",
+
+    "errorToLogin":"Campos errados! Tente novamente."
 }

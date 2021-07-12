@@ -17,71 +17,71 @@ ThemeData baseTheme = ThemeData(
 );
 
 TextTheme _textTheme = TextTheme(
-  headline1: GoogleFonts.openSans(
+  headline1: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  headline2: GoogleFonts.openSans(
+  headline2: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  headline3: GoogleFonts.openSans(
+  headline3: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  headline4: GoogleFonts.openSans(
+  headline4: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  headline5: GoogleFonts.openSans(
+  headline5: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  headline6: GoogleFonts.openSans(
+  headline6: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  bodyText1: GoogleFonts.openSans(
+  bodyText1: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w200,
   ),
-  bodyText2: GoogleFonts.openSans(
+  bodyText2: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w200,
   ),
-  subtitle1: GoogleFonts.openSans(
+  subtitle1: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  button: GoogleFonts.openSans(
+  button: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.bold,
   ),
 );
 
 IconThemeData _iconTheme = IconThemeData(
-  color: whiteColor,
+  color: primaryColor,
   size: 25,
 );
 
 InputDecorationTheme _inputDecoration = InputDecorationTheme(
-  hintStyle: GoogleFonts.raleway(
+  hintStyle: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w500,
   ),
   disabledBorder: OutlineInputBorder(
     borderSide: BorderSide(
-      color: accentColor,
+      color: primaryColor,
     ),
   ),
   border: OutlineInputBorder(
     borderSide: BorderSide(
-      color: accentColor,
+      color: primaryColor,
     ),
   ),
   enabledBorder: OutlineInputBorder(
     borderSide: BorderSide(
-      color: accentColor,
+      color: primaryColor,
     ),
   ),
   errorBorder: OutlineInputBorder(
@@ -91,7 +91,7 @@ InputDecorationTheme _inputDecoration = InputDecorationTheme(
   ),
   focusedBorder: OutlineInputBorder(
     borderSide: BorderSide(
-      color: accentColor,
+      color: inputFocusedColor,
     ),
   ),
 );

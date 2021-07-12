@@ -99,7 +99,7 @@ class OnBoardingPageTemplate extends StatelessWidget {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8),
                             border: Border.all(
-                              color: whiteColor,
+                              color: Theme.of(context).primaryColor,
                               width: 1.5,
                             ),
                           ),

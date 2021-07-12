@@ -10,14 +10,18 @@
     "textOnBoarding3_0":"Describe your",
     "textOnBoarding3_1":"experiences",
     "textOnBoarding3_2":"and rate places",
-    "loginPageGreetText1_0":"Let's get you in.",
-    "loginPageGreetText1_1":"We missed you!",
-    "loginFormFieldTip1_0":"Username",
-    "loginFormFieldTip1_1":"Password",
-    "loginFormFieldTip2_0":"Please type in your username",
-    "loginFormFieldTip2_1":"Please type in a valid passowrd",
-    "loginButtonText1_0":"Forgot the password?",
-    "loginButtonText1_1":"Login",
-    "loginButtonText1_2":"Don't have an account?",
-    "loginButtonText1_3":"Sign Up now."
+
+
+    "loginPageTitle":"Let's get you in.",
+    "loginPageSubtitle":"We missed you!",
+    "username":"Username",
+    "password":"Password",
+    "loginErrorUsername":"Please type in your username",
+    "loginErrorPassword":"Please type in a valid passowrd",
+    "forgotThePasswordBtn":"Forgot the password?",
+    "login":"Login",
+    "dontHaveAccount":"Don't have an account?",
+    "signUp":"Sign Up now.",
+
+    "errorToLogin":"Wrong fields! Try again."
 }
