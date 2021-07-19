@@ -1,3 +1,7 @@
+import 'package:flutter/material.dart';
+import 'package:is_it_safe/utils/style/themes/theme_state.dart';
+import 'package:provider/provider.dart';
+
 class Helpers {
   static bool validateName(String name) {
     if (name.isEmpty) {
@@ -37,5 +41,16 @@ class Helpers {
   static String formatterDateFromAPI(String date) {
     var split = date.split("-");
     return "${split[2] + '/' + split[1] + '/' + split[0]}";
+  }
+
+  static Color getColorFromTheme({
+    required BuildContext context,
+    required Color darkModeColor,
+    required Color lightModeColor,
+  }) {
+    if (Provider.of<ThemeState>(context).theme == ThemeType.DARK) {
+      return darkModeColor;
+    }
+    return lightModeColor;
   }
 }

@@ -3,12 +3,13 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../colors.dart';
 
-ThemeData baseTheme = ThemeData(
+ThemeData lightTheme = ThemeData(
   primaryColor: primaryColor,
-  accentColor: accentColor,
-  backgroundColor: backgroundColor,
-  scaffoldBackgroundColor: backgroundColor,
+  accentColor: accentColorLight,
+  scaffoldBackgroundColor: scaffoldBackgroundColorLight,
   errorColor: errorColor,
+  splashColor: splashColorLight,
+  disabledColor: greyColor,
 
   /// Sub themes
   textTheme: _textTheme,
@@ -18,43 +19,47 @@ ThemeData baseTheme = ThemeData(
 
 TextTheme _textTheme = TextTheme(
   headline1: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: primaryTextColorLight,
     fontWeight: FontWeight.w400,
   ),
   headline2: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: primaryTextColorLight,
     fontWeight: FontWeight.w400,
   ),
   headline3: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: primaryTextColorLight,
     fontWeight: FontWeight.w400,
   ),
   headline4: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: primaryTextColorLight,
     fontWeight: FontWeight.w400,
   ),
   headline5: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: primaryTextColorLight,
     fontWeight: FontWeight.w400,
   ),
   headline6: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: primaryTextColorLight,
     fontWeight: FontWeight.w400,
   ),
   bodyText1: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: primaryTextColorLight,
     fontWeight: FontWeight.w200,
   ),
   bodyText2: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: primaryTextColorLight,
     fontWeight: FontWeight.w200,
   ),
   subtitle1: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: primaryTextColorLight,
+    fontWeight: FontWeight.w400,
+  ),
+  subtitle2: GoogleFonts.poppins(
+    color: primaryTextColorLight,
     fontWeight: FontWeight.w400,
   ),
   button: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: whiteTextColorLight,
     fontWeight: FontWeight.bold,
   ),
 );
@@ -66,32 +71,34 @@ IconThemeData _iconTheme = IconThemeData(
 
 InputDecorationTheme _inputDecoration = InputDecorationTheme(
   hintStyle: GoogleFonts.poppins(
-    color: primaryTextColor,
+    color: greyTextColorLight,
     fontWeight: FontWeight.w500,
   ),
   disabledBorder: OutlineInputBorder(
     borderSide: BorderSide(
-      color: primaryColor,
+      color: greyColor,
     ),
   ),
   border: OutlineInputBorder(
     borderSide: BorderSide(
-      color: primaryColor,
+      color: greyColor,
     ),
   ),
   enabledBorder: OutlineInputBorder(
     borderSide: BorderSide(
-      color: primaryColor,
+      color: greyColor,
     ),
   ),
   errorBorder: OutlineInputBorder(
     borderSide: BorderSide(
       color: errorColor,
+      width: 2,
     ),
   ),
   focusedBorder: OutlineInputBorder(
     borderSide: BorderSide(
       color: inputFocusedColor,
+      width: 2,
     ),
   ),
 );

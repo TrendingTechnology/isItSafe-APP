@@ -3,12 +3,12 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:is_it_safe/bloc/login_bloc.dart';
 import 'package:is_it_safe/components/basic_button_item.dart';
+import 'package:is_it_safe/components/theme_switch.dart';
 import 'package:is_it_safe/generated/l10n.dart';
 import 'package:is_it_safe/presenter/LoginPresenter/login_presenter.dart';
 import 'package:is_it_safe/presenter/LoginPresenter/login_presenter_contract.dart';
 import 'package:is_it_safe/utils/helpers/helpers.dart';
 import 'package:is_it_safe/utils/helpers/manage_dialogs.dart';
-import 'package:is_it_safe/utils/style/colors.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -60,6 +60,8 @@ class _LoginPageState extends State<LoginPage> implements LoginPageContract {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  //ThemeSwitch(),
+
                   ///Text
                   Padding(
                     padding: EdgeInsets.only(bottom: 20.0),
@@ -127,7 +129,6 @@ class _LoginPageState extends State<LoginPage> implements LoginPageContract {
                           S.of(context).forgotThePasswordBtn,
                           style:
                               Theme.of(context).textTheme.subtitle2!.copyWith(
-                                    color: Theme.of(context).primaryColor,
                                     decoration: TextDecoration.underline,
                                   ),
                         ),
@@ -156,17 +157,18 @@ class _LoginPageState extends State<LoginPage> implements LoginPageContract {
                       children: [
                         Text(
                           S.of(context).dontHaveAccount,
-                          style: TextStyle(
-                            color: Theme.of(context).primaryColor,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: Theme.of(context).textTheme.subtitle2,
                         ),
                         TextButton(
                           onPressed: navigateToRegister,
                           child: Text(
                             S.of(context).signUp,
                             style: TextStyle(
-                              color: accentColor,
+                              color: Helpers.getColorFromTheme(
+                                context: context,
+                                darkModeColor: Theme.of(context).accentColor,
+                                lightModeColor: Theme.of(context).primaryColor,
+                              ),
                               decoration: TextDecoration.underline,
                             ),
                           ),

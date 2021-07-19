@@ -70,27 +70,27 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: scaffoldBackgroundColorDark,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FadeAnimation(0.5, _icon()),
-            FadeAnimation(1.4, _textTitle()),
+            FadeAnimation(1, _icon()),
+            FadeAnimation(1.6, _textTitle()),
           ],
         ),
       ),
     );
   }
 
-  Padding _textTitle() {
+  _textTitle() {
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: Text(
         S.of(context).appTitle,
         textAlign: TextAlign.center,
         style: GoogleFonts.poppins(
-          color: primaryTextColor,
+          color: primaryTextColorDark,
           fontSize: 30,
           fontWeight: FontWeight.bold,
         ),

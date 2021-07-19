@@ -37,6 +37,8 @@ dependencies:
   flutter_svg: ^0.22.0
   # Used to provide base platform interface for flutter
   plugin_platform_interface: ^2.0.0
+  # Used to control the Dark and LIght Themes
+  provider: ^5.0.0
 
 dev_dependencies:
   flutter_test:

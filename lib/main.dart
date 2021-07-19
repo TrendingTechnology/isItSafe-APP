@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:is_it_safe/pages/splash_page.dart';
-import 'package:is_it_safe/utils/style/themes/base_theme.dart';
+import 'package:is_it_safe/utils/style/themes/dark_theme.dart';
+import 'package:is_it_safe/utils/style/themes/light_theme.dart';
+import 'package:is_it_safe/utils/style/themes/theme_state.dart';
+import 'package:provider/provider.dart';
 
 import 'generated/l10n.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    ChangeNotifierProvider<ThemeState>(
+      create: (context) => ThemeState(),
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -15,7 +23,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Is It Safe?',
       debugShowCheckedModeBanner: false,
-      theme: baseTheme,
+      theme: Provider.of<ThemeState>(context).theme == ThemeType.DARK
+          ? darkTheme
+          : lightTheme,
       home: SplashPage(),
       localizationsDelegates: [
         S.delegate,
