@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> implements LoginPageContract {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  //ThemeSwitch(),
+                  // ThemeSwitch(),
 
                   ///Text
                   Padding(
@@ -76,7 +76,7 @@ class _LoginPageState extends State<LoginPage> implements LoginPageContract {
                                 .copyWith(fontWeight: FontWeight.bold),
                           ),
                           TextSpan(
-                            text: "${S.of(context).loginPageSubtitle}",
+                            text: S.of(context).loginPageSubtitle,
                             style: Theme.of(context).textTheme.headline5,
                           )
                         ],
@@ -84,7 +84,7 @@ class _LoginPageState extends State<LoginPage> implements LoginPageContract {
                     ),
                   ),
 
-                  ///UsernameField
+                  ///Username Field
                   Padding(
                     padding: EdgeInsets.only(bottom: 18.0),
                     child: TextFormField(
@@ -109,6 +109,7 @@ class _LoginPageState extends State<LoginPage> implements LoginPageContract {
                     decoration: InputDecoration(
                       hintText: S.of(context).password,
                     ),
+                    obscureText: true,
                     onChanged: (value) => _presenter.enableButton(),
                     validator: (value) {
                       if (!Helpers.validatePassword(value!)) {
