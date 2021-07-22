@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+
+import 'package:is_it_safe/bloc/profile_registration_bloc.dart';
 import 'package:is_it_safe/components/basic_button_item.dart';
 import 'package:is_it_safe/components/theme_switch.dart';
 import 'package:is_it_safe/generated/l10n.dart';
-import 'package:is_it_safe/utils/constants.dart';
+import 'package:is_it_safe/presenter/ProfileRegistrationPresenter/profile_registration_contract.dart';
+import 'package:is_it_safe/presenter/ProfileRegistrationPresenter/profile_registration_presenter.dart';
 import 'package:is_it_safe/utils/helpers/helpers.dart';
+import 'package:is_it_safe/utils/helpers/manage_dialogs.dart';
 
 class ProfileRegistrationPage extends StatefulWidget {
   const ProfileRegistrationPage({Key? key}) : super(key: key);
@@ -13,10 +18,35 @@ class ProfileRegistrationPage extends StatefulWidget {
       _ProfileRegistrationPageState();
 }
 
-class _ProfileRegistrationPageState extends State<ProfileRegistrationPage> {
+class _ProfileRegistrationPageState extends State<ProfileRegistrationPage>
+    implements ProfileRegistrationPageContract {
+  late ProfileRegistrationPresenter _registrationPresenter =
+      ProfileRegistrationPresenter(this, ProfileRegistrationBloc());
+
+  @override
+  navigateToHome() {
+    // TODO: implement navigateToHome
+  }
+
+  @override
+  onError({required String message}) {
+    ManagerDialogs.showErrorDialog(context, message);
+  }
+
+  @override
+  registrationSuccess() {
+    // TODO: implement registrationSuccess
+  }
+
+  @override
+  navigateToForgot() {
+    // TODO: implement navigateToForgot
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _registrationPresenter.scaffoldKey,
       appBar: AppBar(
         title: Text(S.of(context).profileRegPageBarTitle,
             style: Theme.of(context).textTheme.headline6!),
@@ -24,7 +54,7 @@ class _ProfileRegistrationPageState extends State<ProfileRegistrationPage> {
         elevation: 0,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(30),
+        padding: const EdgeInsets.only(top: 20, right: 25, left: 25),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -70,56 +100,83 @@ class _ProfileRegistrationPageState extends State<ProfileRegistrationPage> {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 20.0),
-                child: Form(
-                  child: TextFormField(
-                    keyboardType: TextInputType.number,
-                    decoration:
-                        InputDecoration(hintText: S.of(context).dateOfBirth),
-                  ),
+              Form(
+                key: _registrationPresenter.formKey,
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 20.0),
+                      child: TextFormField(
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                            hintText: S.of(context).dateOfBirth),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 20.0),
+                      child: DropdownButtonFormField(
+                        decoration: InputDecoration(
+                            labelText: S.of(context).gender,
+                            labelStyle: Theme.of(context).textTheme.subtitle2),
+                        dropdownColor:
+                            Theme.of(context).scaffoldBackgroundColor,
+                        value: _registrationPresenter.provisionalOptions[0],
+                        onChanged: (String? value) => setState(() {}),
+                        items: _registrationPresenter.getDropDownItens(),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 20.0),
+                      child: DropdownButtonFormField<String>(
+                        decoration: InputDecoration(
+                            labelText: S.of(context).sexualOrientation,
+                            labelStyle: Theme.of(context).textTheme.subtitle2),
+                        dropdownColor:
+                            Theme.of(context).scaffoldBackgroundColor,
+                        value:
+                            _registrationPresenter.provisionalSexualOptions[0],
+                        onChanged: (String? value) => setState(() {}),
+                        items: _registrationPresenter.getDropDownItens(),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 20.0),
-                child: DropdownButton(
-                  value: Constants.provisionalOptions[0],
-                  onChanged: (String? value) => setState(() {}),
-                  items: getDropDownItens(),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 20.0),
-                child: DropdownButton<String>(
-                  value: Constants.provisionalSexualOptions[0],
-                  onChanged: (String? value) => setState(() {}),
-                  items: getDropDownItens(),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 45.0),
-                child: Align(
-                  alignment: Alignment.centerRight,
-                  child: Container(
-                    width: MediaQuery.of(context).size.width * 0.65,
+              Container(
+                width: MediaQuery.of(context).size.width * 0.75,
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 45.0),
+                  child: Align(
+                    alignment: Alignment.centerRight,
                     child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(right: 4.0),
                           child: Text(
                             S.of(context).forgotGenderText,
-                            style: Theme.of(context).textTheme.subtitle2,
+                            overflow: TextOverflow.ellipsis,
+                            style: Theme.of(context).textTheme.button!.copyWith(
+                                  color: Helpers.getColorFromTheme(
+                                      context: context,
+                                      darkModeColor:
+                                          Theme.of(context).buttonColor,
+                                      lightModeColor:
+                                          Theme.of(context).disabledColor),
+                                ),
                           ),
                         ),
                         GestureDetector(
                           child: Text(
                             S.of(context).forgotGenderSubtext,
-                            style: Theme.of(context)
-                                .textTheme
-                                .subtitle2!
-                                .copyWith(
-                                    color: Theme.of(context).backgroundColor,
-                                    decoration: TextDecoration.underline),
+                            style: Theme.of(context).textTheme.button!.copyWith(
+                                color: Helpers.getColorFromTheme(
+                                    context: context,
+                                    darkModeColor:
+                                        Theme.of(context).backgroundColor,
+                                    lightModeColor:
+                                        Theme.of(context).primaryColor),
+                                decoration: TextDecoration.underline),
                           ),
                           onTap: () => null,
                         ),
@@ -128,27 +185,27 @@ class _ProfileRegistrationPageState extends State<ProfileRegistrationPage> {
                   ),
                 ),
               ),
-              Align(
-                alignment: Alignment.bottomCenter,
+              Padding(
+                padding: const EdgeInsets.only(bottom: 16.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 16.0),
-                      child: GestureDetector(
-                        onTap: () => null,
-                        child: Text(
-                          S.of(context).skipForNow.toUpperCase(),
-                          style:
-                              Theme.of(context).textTheme.subtitle1!.copyWith(
-                                    color: Theme.of(context).buttonColor,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                        ),
+                    GestureDetector(
+                      onTap: () => null,
+                      child: Text(
+                        S.of(context).skipForNow.toUpperCase(),
+                        style: Theme.of(context).textTheme.button!.copyWith(
+                              fontWeight: FontWeight.bold,
+                              color: Helpers.getColorFromTheme(
+                                  context: context,
+                                  darkModeColor: Theme.of(context).buttonColor,
+                                  lightModeColor:
+                                      Theme.of(context).accentColor),
+                            ),
                       ),
                     ),
                     Container(
-                      width: MediaQuery.of(context).size.width * 0.40,
+                      width: MediaQuery.of(context).size.width * 0.37,
                       child: BasicButton(text: S.of(context).register),
                     )
                   ],
@@ -159,20 +216,5 @@ class _ProfileRegistrationPageState extends State<ProfileRegistrationPage> {
         ),
       ),
     );
-  }
-
-  List<DropdownMenuItem<String>> getDropDownItens() {
-    List<DropdownMenuItem<String>> itens = [];
-
-    for (String item in Constants.provisionalOptions) {
-      DropdownMenuItem<String> newItem = DropdownMenuItem(
-        value: item,
-        child: Text(item),
-      );
-
-      itens.add(newItem);
-    }
-
-    return itens;
   }
 }

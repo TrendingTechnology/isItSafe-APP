@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> implements LoginPageContract {
 
   @override
   navigateToRegister() {
-    Navigator.of(context).push(
+    Navigator.of(context).pushReplacement(
       MaterialPageRoute(
         builder: (context) => ProfileRegistrationPage(),
       ),
