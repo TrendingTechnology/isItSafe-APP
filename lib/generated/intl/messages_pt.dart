@@ -22,12 +22,19 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "appTitle": MessageLookupByLibrary.simpleMessage("Is It Safe?"),
+        "dateOfBirth":
+            MessageLookupByLibrary.simpleMessage("Data de nascimento"),
         "dontHaveAccount":
             MessageLookupByLibrary.simpleMessage("Não possui uma conta?"),
         "errorToLogin": MessageLookupByLibrary.simpleMessage(
             "Campos errados! Tente novamente."),
+        "forgotGenderSubtext":
+            MessageLookupByLibrary.simpleMessage("me avise!"),
+        "forgotGenderText":
+            MessageLookupByLibrary.simpleMessage("Esqueci algum? Por favor"),
         "forgotThePasswordBtn":
             MessageLookupByLibrary.simpleMessage("Esqueceu sua senha?"),
+        "gender": MessageLookupByLibrary.simpleMessage("Gênero"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginErrorPassword": MessageLookupByLibrary.simpleMessage(
             "Por favor digite uma senha válida"),
@@ -37,7 +44,17 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Sentimos sua falta!"),
         "loginPageTitle": MessageLookupByLibrary.simpleMessage("Vamos entrar."),
         "password": MessageLookupByLibrary.simpleMessage("Senha"),
+        "profileRegPageBarTitle":
+            MessageLookupByLibrary.simpleMessage("Perfil"),
+        "profileRegPageSubtitle":
+            MessageLookupByLibrary.simpleMessage("Não se esqueça de sorrir!"),
+        "profileRegPageTitle":
+            MessageLookupByLibrary.simpleMessage("Escolha uma foto de perfil!"),
+        "register": MessageLookupByLibrary.simpleMessage("Cadastrar"),
+        "sexualOrientation":
+            MessageLookupByLibrary.simpleMessage("Orientação Sexual"),
         "signUp": MessageLookupByLibrary.simpleMessage("Cadastre-se."),
+        "skipForNow": MessageLookupByLibrary.simpleMessage("Pular"),
         "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
         "textOnBoarding1_0": MessageLookupByLibrary.simpleMessage("Foco em"),
         "textOnBoarding1_1": MessageLookupByLibrary.simpleMessage("segurança"),

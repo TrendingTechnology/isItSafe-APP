@@ -269,6 +269,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Profile`
+  String get profileRegPageBarTitle {
+    return Intl.message(
+      'Profile',
+      name: 'profileRegPageBarTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pick a profile picture!`
+  String get profileRegPageTitle {
+    return Intl.message(
+      'Pick a profile picture!',
+      name: 'profileRegPageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't forget to smile!`
+  String get profileRegPageSubtitle {
+    return Intl.message(
+      'Don\'t forget to smile!',
+      name: 'profileRegPageSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Date of birth`
+  String get dateOfBirth {
+    return Intl.message(
+      'Date of birth',
+      name: 'dateOfBirth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gender`
+  String get gender {
+    return Intl.message(
+      'Gender',
+      name: 'gender',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sexual Orientation`
+  String get sexualOrientation {
+    return Intl.message(
+      'Sexual Orientation',
+      name: 'sexualOrientation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Am I forgetting any? Please`
+  String get forgotGenderText {
+    return Intl.message(
+      'Am I forgetting any? Please',
+      name: 'forgotGenderText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `let me know!`
+  String get forgotGenderSubtext {
+    return Intl.message(
+      'let me know!',
+      name: 'forgotGenderSubtext',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skip this for now`
+  String get skipForNow {
+    return Intl.message(
+      'Skip this for now',
+      name: 'skipForNow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register`
+  String get register {
+    return Intl.message(
+      'Register',
+      name: 'register',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

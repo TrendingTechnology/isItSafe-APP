@@ -5,6 +5,7 @@ import 'package:is_it_safe/bloc/login_bloc.dart';
 import 'package:is_it_safe/components/basic_button_item.dart';
 import 'package:is_it_safe/components/theme_switch.dart';
 import 'package:is_it_safe/generated/l10n.dart';
+import 'package:is_it_safe/pages/profile_registration_page.dart';
 import 'package:is_it_safe/presenter/LoginPresenter/login_presenter.dart';
 import 'package:is_it_safe/presenter/LoginPresenter/login_presenter_contract.dart';
 import 'package:is_it_safe/utils/helpers/helpers.dart';
@@ -44,7 +45,11 @@ class _LoginPageState extends State<LoginPage> implements LoginPageContract {
 
   @override
   navigateToRegister() {
-    // TODO: implement navigateToRegister
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => ProfileRegistrationPage(),
+      ),
+    );
   }
 
   @override

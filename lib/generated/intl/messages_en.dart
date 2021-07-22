@@ -22,12 +22,18 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "appTitle": MessageLookupByLibrary.simpleMessage("Is It Safe?"),
+        "dateOfBirth": MessageLookupByLibrary.simpleMessage("Date of birth"),
         "dontHaveAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "errorToLogin":
             MessageLookupByLibrary.simpleMessage("Wrong fields! Try again."),
+        "forgotGenderSubtext":
+            MessageLookupByLibrary.simpleMessage("let me know!"),
+        "forgotGenderText":
+            MessageLookupByLibrary.simpleMessage("Am I forgetting any? Please"),
         "forgotThePasswordBtn":
             MessageLookupByLibrary.simpleMessage("Forgot the password?"),
+        "gender": MessageLookupByLibrary.simpleMessage("Gender"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginErrorPassword": MessageLookupByLibrary.simpleMessage(
             "Please type in a valid passowrd"),
@@ -38,7 +44,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginPageTitle":
             MessageLookupByLibrary.simpleMessage("Let\'s get you in."),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "profileRegPageBarTitle":
+            MessageLookupByLibrary.simpleMessage("Profile"),
+        "profileRegPageSubtitle":
+            MessageLookupByLibrary.simpleMessage("Don\'t forget to smile!"),
+        "profileRegPageTitle":
+            MessageLookupByLibrary.simpleMessage("Pick a profile picture!"),
+        "register": MessageLookupByLibrary.simpleMessage("Register"),
+        "sexualOrientation":
+            MessageLookupByLibrary.simpleMessage("Sexual Orientation"),
         "signUp": MessageLookupByLibrary.simpleMessage("Sign Up now."),
+        "skipForNow": MessageLookupByLibrary.simpleMessage("Skip this for now"),
         "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
         "textOnBoarding1_0": MessageLookupByLibrary.simpleMessage("Focus on"),
         "textOnBoarding1_1": MessageLookupByLibrary.simpleMessage("safety"),

@@ -22,6 +22,16 @@
     "login":"Login",
     "dontHaveAccount":"Don't have an account?",
     "signUp":"Sign Up now.",
+    "errorToLogin":"Wrong fields! Try again.",
 
-    "errorToLogin":"Wrong fields! Try again."
+    "profileRegPageBarTitle":"Profile",
+    "profileRegPageTitle":"Pick a profile picture!",
+    "profileRegPageSubtitle":"Don't forget to smile!",
+    "dateOfBirth":"Date of birth",
+    "gender":"Gender",
+    "sexualOrientation":"Sexual Orientation",
+    "forgotGenderText":"Am I forgetting any? Please",
+    "forgotGenderSubtext":"let me know!",
+    "skipForNow":"Skip this for now",
+    "register":"Register"
 }

@@ -23,5 +23,15 @@
     "dontHaveAccount":"Não possui uma conta?",
     "signUp":"Cadastre-se.",
 
-    "errorToLogin":"Campos errados! Tente novamente."
+    "errorToLogin":"Campos errados! Tente novamente.",
+    "profileRegPageBarTitle":"Perfil",
+    "profileRegPageTitle":"Escolha uma foto de perfil!",
+    "profileRegPageSubtitle":"Não se esqueça de sorrir!",
+    "dateOfBirth":"Data de nascimento",
+    "gender":"Gênero",
+    "sexualOrientation":"Orientação Sexual",
+    "forgotGenderText":"Esqueci algum? Por favor",
+    "forgotGenderSubtext":"me avise!",
+    "skipForNow":"Pular",
+    "register":"Cadastrar"
 }
