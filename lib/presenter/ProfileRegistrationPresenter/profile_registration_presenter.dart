@@ -5,6 +5,8 @@ import 'package:is_it_safe/presenter/ProfileRegistrationPresenter/profile_regist
 class ProfileRegistrationPresenter implements ProfilePresenterContract {
   final ProfileRegistrationPageContract _contract;
   final ProfileRegistrationBloc _bloc;
+  final scaffoldKey = GlobalKey<ScaffoldState>();
+  final formKey = GlobalKey<FormState>();
 
   ProfileRegistrationPresenter(this._contract, this._bloc);
 
@@ -19,9 +21,6 @@ class ProfileRegistrationPresenter implements ProfilePresenterContract {
     "Option 2",
     "Option 3",
   ];
-
-  final scaffoldKey = GlobalKey<ScaffoldState>();
-  final formKey = GlobalKey<FormState>();
 
   @override
   doRegister() {

@@ -1,8 +1,8 @@
 abstract class ProfileRegistrationPageContract {
   onError({required String message});
   registrationSuccess();
-  navigateToHome();
   navigateToForgot();
+  choosePicture();
 }
 
 abstract class ProfilePresenterContract {

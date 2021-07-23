@@ -55,7 +55,9 @@ class OnBoardingPageTemplate extends StatelessWidget {
                     padding: const EdgeInsets.only(right: 32.0),
                     child: IconButton(
                       icon: IconTheme(
-                        data: Theme.of(context).iconTheme,
+                        data: Theme.of(context)
+                            .iconTheme
+                            .copyWith(color: Colors.white),
                         child: Icon(
                           Icons.close,
                         ),
@@ -84,7 +86,8 @@ class OnBoardingPageTemplate extends StatelessWidget {
                     child: GestureDetector(
                       onTap: () async {
                         await CustomSharedPreferences.saveUsuarioOnBoarding(
-                            true);
+                          true,
+                        );
                         Navigator.of(context).pushReplacement(
                           CupertinoPageRoute(
                             builder: (context) => LoginPage(),
@@ -99,13 +102,16 @@ class OnBoardingPageTemplate extends StatelessWidget {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8),
                             border: Border.all(
-                              color: Theme.of(context).primaryColor,
+                              color: Colors.white,
                               width: 1.5,
                             ),
                           ),
                           child: Text(
                             S.of(context).textLogin,
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style:
+                                Theme.of(context).textTheme.subtitle1!.copyWith(
+                                      color: Colors.white,
+                                    ),
                             textAlign: TextAlign.center,
                           ),
                         ),

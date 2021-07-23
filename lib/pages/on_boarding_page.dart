@@ -62,22 +62,28 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         children: [
           TextSpan(
             text: "${S.of(context).textOnBoarding1_0} ",
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.headline4!.copyWith(
+                  color: Colors.white,
+                ),
           ),
           TextSpan(
             text: "${S.of(context).textOnBoarding1_1} ",
             style: Theme.of(context).textTheme.headline4!.copyWith(
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
           ),
           TextSpan(
             text: "${S.of(context).textOnBoarding1_2} ",
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.headline4!.copyWith(
+                  color: Colors.white,
+                ),
           ),
           TextSpan(
             text: "${S.of(context).textOnBoarding1_3}.",
             style: Theme.of(context).textTheme.headline4!.copyWith(
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
           ),
         ],
@@ -91,12 +97,15 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         children: [
           TextSpan(
             text: "${S.of(context).textOnBoarding2_0} ",
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.headline4!.copyWith(
+                  color: Colors.white,
+                ),
           ),
           TextSpan(
             text: "${S.of(context).textOnBoarding2_1}.",
             style: Theme.of(context).textTheme.headline4!.copyWith(
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
           ),
         ],
@@ -110,17 +119,22 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         children: [
           TextSpan(
             text: "${S.of(context).textOnBoarding3_0} ",
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.headline4!.copyWith(
+                  color: Colors.white,
+                ),
           ),
           TextSpan(
             text: "${S.of(context).textOnBoarding3_1} ",
             style: Theme.of(context).textTheme.headline4!.copyWith(
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
           ),
           TextSpan(
             text: "${S.of(context).textOnBoarding3_2}.",
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.headline4!.copyWith(
+                  color: Colors.white,
+                ),
           ),
         ],
       ),
