@@ -38,6 +38,36 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginPageTitle":
             MessageLookupByLibrary.simpleMessage("Let\'s get you in."),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "registrationPageButtonText1_0":
+            MessageLookupByLibrary.simpleMessage("REGISTER"),
+        "registrationPageFormFieldTip1_0":
+            MessageLookupByLibrary.simpleMessage("Name"),
+        "registrationPageFormFieldTip1_1":
+            MessageLookupByLibrary.simpleMessage("Username"),
+        "registrationPageFormFieldTip2_0": MessageLookupByLibrary.simpleMessage(
+            "Example: she/her, they/them, she/they"),
+        "registrationPageFormFieldTip3_0":
+            MessageLookupByLibrary.simpleMessage("Email Address"),
+        "registrationPageFormFieldTip3_1":
+            MessageLookupByLibrary.simpleMessage("Password"),
+        "registrationPageFormFieldTip4_0":
+            MessageLookupByLibrary.simpleMessage("Confirm password"),
+        "registrationPageSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Meeting you will be a pleasure!"),
+        "registrationPageText1_0": MessageLookupByLibrary.simpleMessage(
+            "Don\'t be afraid to be creative"),
+        "registrationPageText1_1": MessageLookupByLibrary.simpleMessage(
+            "How do you prefer people to refer to you?"),
+        "registrationPageText2_0": MessageLookupByLibrary.simpleMessage(
+            "We care about your safety, so..."),
+        "registrationPageText2_1": MessageLookupByLibrary.simpleMessage(
+            "- more than 8 characters long"),
+        "registrationPageText2_2": MessageLookupByLibrary.simpleMessage(
+            "- letters and numbers, please"),
+        "registrationPageText3_0": MessageLookupByLibrary.simpleMessage(
+            "I\'ve read and accept the terms & conditions*"),
+        "registrationPageTitle":
+            MessageLookupByLibrary.simpleMessage("Welcome!"),
         "signUp": MessageLookupByLibrary.simpleMessage("Sign Up now."),
         "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
         "textOnBoarding1_0": MessageLookupByLibrary.simpleMessage("Focus on"),

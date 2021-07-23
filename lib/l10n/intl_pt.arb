@@ -23,5 +23,22 @@
     "dontHaveAccount":"Não possui uma conta?",
     "signUp":"Cadastre-se.",
 
-    "errorToLogin":"Campos errados! Tente novamente."
+    "errorToLogin":"Campos errados! Tente novamente.",
+
+    "registrationPageTitle":"Bem vinde!",
+    "registrationPageSubtitle":"Será um prazer te encontrar!",
+    "registrationPageText1_0":"Não tenha medo de ser criativo",
+    "registrationPageText1_1":"Como prefere que se refiram a você?",
+    "registrationPageText2_0":"Nos importamos com a sua segurança, então...",
+    "registrationPageText2_1":"- mínimo de 8 caracteres",
+    "registrationPageText2_2":"- letras e números, por favor",
+    "registrationPageText3_0":"Eu li e aceito os termos e condições*",
+    "registrationPageFormFieldTip1_0":"Nome",
+    "registrationPageFormFieldTip1_1":"Apelido",
+    "registrationPageFormFieldTip2_0":"Exemplo: Ela/Delas, Elu/Delu, Ela/Elu",
+    "registrationPageFormFieldTip3_0":"Endereço de email",
+    "registrationPageFormFieldTip3_1":"Senha",
+    "registrationPageFormFieldTip4_0":"Confirmar senha",
+    "registrationPageButtonText1_0":"CADASTRAR"
+    
 }

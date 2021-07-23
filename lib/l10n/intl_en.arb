@@ -23,5 +23,22 @@
     "dontHaveAccount":"Don't have an account?",
     "signUp":"Sign Up now.",
 
-    "errorToLogin":"Wrong fields! Try again."
+    "errorToLogin":"Wrong fields! Try again.",
+    
+    "registrationPageTitle":"Welcome!",
+    "registrationPageSubtitle":"Meeting you will be a pleasure!",
+    "registrationPageText1_0":"Don't be afraid to be creative",
+    "registrationPageText1_1":"How do you prefer people to refer to you?",
+    "registrationPageText2_0":"We care about your safety, so...",
+    "registrationPageText2_1":"- more than 8 characters long",
+    "registrationPageText2_2":"- letters and numbers, please",
+    "registrationPageText3_0":"I've read and accept the terms & conditions*",
+    "registrationPageFormFieldTip1_0":"Name",
+    "registrationPageFormFieldTip1_1":"Username",
+    "registrationPageFormFieldTip2_0":"Example: she/her, they/them, she/they",
+    "registrationPageFormFieldTip3_0":"Email Address",
+    "registrationPageFormFieldTip3_1":"Password",
+    "registrationPageFormFieldTip4_0":"Confirm password",
+    "registrationPageButtonText1_0":"REGISTER"
+
 }

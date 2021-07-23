@@ -269,6 +269,156 @@ class S {
       args: [],
     );
   }
+
+  /// `Welcome!`
+  String get registrationPageTitle {
+    return Intl.message(
+      'Welcome!',
+      name: 'registrationPageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Meeting you will be a pleasure!`
+  String get registrationPageSubtitle {
+    return Intl.message(
+      'Meeting you will be a pleasure!',
+      name: 'registrationPageSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't be afraid to be creative`
+  String get registrationPageText1_0 {
+    return Intl.message(
+      'Don\'t be afraid to be creative',
+      name: 'registrationPageText1_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How do you prefer people to refer to you?`
+  String get registrationPageText1_1 {
+    return Intl.message(
+      'How do you prefer people to refer to you?',
+      name: 'registrationPageText1_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We care about your safety, so...`
+  String get registrationPageText2_0 {
+    return Intl.message(
+      'We care about your safety, so...',
+      name: 'registrationPageText2_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- more than 8 characters long`
+  String get registrationPageText2_1 {
+    return Intl.message(
+      '- more than 8 characters long',
+      name: 'registrationPageText2_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- letters and numbers, please`
+  String get registrationPageText2_2 {
+    return Intl.message(
+      '- letters and numbers, please',
+      name: 'registrationPageText2_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I've read and accept the terms & conditions*`
+  String get registrationPageText3_0 {
+    return Intl.message(
+      'I\'ve read and accept the terms & conditions*',
+      name: 'registrationPageText3_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get registrationPageFormFieldTip1_0 {
+    return Intl.message(
+      'Name',
+      name: 'registrationPageFormFieldTip1_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Username`
+  String get registrationPageFormFieldTip1_1 {
+    return Intl.message(
+      'Username',
+      name: 'registrationPageFormFieldTip1_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Example: she/her, they/them, she/they`
+  String get registrationPageFormFieldTip2_0 {
+    return Intl.message(
+      'Example: she/her, they/them, she/they',
+      name: 'registrationPageFormFieldTip2_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email Address`
+  String get registrationPageFormFieldTip3_0 {
+    return Intl.message(
+      'Email Address',
+      name: 'registrationPageFormFieldTip3_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get registrationPageFormFieldTip3_1 {
+    return Intl.message(
+      'Password',
+      name: 'registrationPageFormFieldTip3_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm password`
+  String get registrationPageFormFieldTip4_0 {
+    return Intl.message(
+      'Confirm password',
+      name: 'registrationPageFormFieldTip4_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `REGISTER`
+  String get registrationPageButtonText1_0 {
+    return Intl.message(
+      'REGISTER',
+      name: 'registrationPageButtonText1_0',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -37,6 +37,36 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Sentimos sua falta!"),
         "loginPageTitle": MessageLookupByLibrary.simpleMessage("Vamos entrar."),
         "password": MessageLookupByLibrary.simpleMessage("Senha"),
+        "registrationPageButtonText1_0":
+            MessageLookupByLibrary.simpleMessage("CADASTRAR"),
+        "registrationPageFormFieldTip1_0":
+            MessageLookupByLibrary.simpleMessage("Nome"),
+        "registrationPageFormFieldTip1_1":
+            MessageLookupByLibrary.simpleMessage("Apelido"),
+        "registrationPageFormFieldTip2_0": MessageLookupByLibrary.simpleMessage(
+            "Exemplo: Ela/Delas, Elu/Delu, Ela/Elu"),
+        "registrationPageFormFieldTip3_0":
+            MessageLookupByLibrary.simpleMessage("Endereço de email"),
+        "registrationPageFormFieldTip3_1":
+            MessageLookupByLibrary.simpleMessage("Senha"),
+        "registrationPageFormFieldTip4_0":
+            MessageLookupByLibrary.simpleMessage("Confirmar senha"),
+        "registrationPageSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Será um prazer te encontrar!"),
+        "registrationPageText1_0": MessageLookupByLibrary.simpleMessage(
+            "Não tenha medo de ser criativo"),
+        "registrationPageText1_1": MessageLookupByLibrary.simpleMessage(
+            "Como prefere que se refiram a você?"),
+        "registrationPageText2_0": MessageLookupByLibrary.simpleMessage(
+            "Nos importamos com a sua segurança, então..."),
+        "registrationPageText2_1":
+            MessageLookupByLibrary.simpleMessage("- mínimo de 8 caracteres"),
+        "registrationPageText2_2": MessageLookupByLibrary.simpleMessage(
+            "- letras e números, por favor"),
+        "registrationPageText3_0": MessageLookupByLibrary.simpleMessage(
+            "Eu li e aceito os termos e condições*"),
+        "registrationPageTitle":
+            MessageLookupByLibrary.simpleMessage("Bem vinde!"),
         "signUp": MessageLookupByLibrary.simpleMessage("Cadastre-se."),
         "textLogin": MessageLookupByLibrary.simpleMessage("Login"),
         "textOnBoarding1_0": MessageLookupByLibrary.simpleMessage("Foco em"),
