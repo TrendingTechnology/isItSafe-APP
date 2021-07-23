@@ -46,7 +46,6 @@ class _ProfileRegistrationPageState extends State<ProfileRegistrationPage>
   @override
   choosePicture() {
     // TODO: implement choosePicture
-    throw UnimplementedError();
   }
 
   @override
