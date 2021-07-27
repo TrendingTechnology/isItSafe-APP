@@ -37,8 +37,12 @@ dependencies:
   flutter_svg: ^0.22.0
   # Used to provide base platform interface for flutter
   plugin_platform_interface: ^2.0.0
-  # Used to control the Dark and LIght Themes
+  # Used to control the Dark and Light Themes
   provider: ^5.0.0
+  # used to mask input forms
+  mask_text_input_formatter: ^2.0.0
+  # used to launch other applications
+  url_launcher: ^6.0.9
 
 dev_dependencies:
   flutter_test:

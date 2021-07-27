@@ -1,7 +1,7 @@
 abstract class ProfileRegistrationPageContract {
   onError({required String message});
   registrationSuccess();
-  navigateToForgot();
+  Future<void> navigateToForgot();
   choosePicture();
 }
 

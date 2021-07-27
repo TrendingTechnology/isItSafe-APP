@@ -13,6 +13,8 @@ import 'package:is_it_safe/utils/helpers/manage_dialogs.dart';
 import 'package:is_it_safe/utils/style/colors.dart';
 import 'package:is_it_safe/utils/style/text_size.dart';
 
+import 'package:url_launcher/url_launcher.dart';
+
 class ProfileRegistrationPage extends StatefulWidget {
   const ProfileRegistrationPage({Key? key}) : super(key: key);
 
@@ -39,8 +41,10 @@ class _ProfileRegistrationPageState extends State<ProfileRegistrationPage>
   }
 
   @override
-  navigateToForgot() {
-    // TODO: implement navigateToForgot
+  navigateToForgot() async {
+    final String uri = "mailto:example@example";
+
+    await launch(uri);
   }
 
   @override
@@ -71,7 +75,11 @@ class _ProfileRegistrationPageState extends State<ProfileRegistrationPage>
 
                 ///Choose picture
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () => ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text("Navegação aqui"),
+                    ),
+                  ),
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 16.0),
                     child: Container(
@@ -115,6 +123,9 @@ class _ProfileRegistrationPageState extends State<ProfileRegistrationPage>
                 Padding(
                   padding: const EdgeInsets.only(bottom: 20.0),
                   child: TextFormField(
+                    inputFormatters: [_presenter.dateMask],
+                    controller: _presenter.dateBirthController,
+                    onChanged: (value) => _presenter.enableRegisterButton(),
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       hintText: S.of(context).dateOfBirth,
@@ -132,7 +143,10 @@ class _ProfileRegistrationPageState extends State<ProfileRegistrationPage>
                     ),
                     dropdownColor: Theme.of(context).scaffoldBackgroundColor,
                     value: _presenter.provisionalOptions[0],
-                    onChanged: (String? value) => setState(() {}),
+                    onChanged: (String? value) => setState(() {
+                      _presenter.genderOption = value!;
+                      _presenter.enableRegisterButton();
+                    }),
                     items: _presenter.getDropDownItens(),
                   ),
                 ),
@@ -147,45 +161,53 @@ class _ProfileRegistrationPageState extends State<ProfileRegistrationPage>
                     ),
                     dropdownColor: Theme.of(context).scaffoldBackgroundColor,
                     value: _presenter.provisionalSexualOptions[0],
-                    onChanged: (String? value) => setState(() {}),
-                    items: _presenter.getDropDownItens(),
+                    onChanged: (String? value) => setState(() {
+                      _presenter.sexualOption = value!;
+                      _presenter.enableRegisterButton();
+                    }),
+                    items: _presenter.getSecondDropDownItens(),
                   ),
                 ),
 
                 ///Forgot any button
                 Align(
                   alignment: Alignment.centerRight,
-                  child: RichText(
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: S.of(context).forgotGenderText + " ",
-                          style: Theme.of(context).textTheme.button!.copyWith(
-                                fontSize: TextSize.xxSmall,
-                                color: Helpers.getColorFromTheme(
-                                  context: context,
-                                  darkModeColor: Theme.of(context).buttonColor,
-                                  lightModeColor:
-                                      Theme.of(context).disabledColor,
+                  child: GestureDetector(
+                    onTap: () async => await navigateToForgot(),
+                    child: RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: S.of(context).forgotGenderText + " ",
+                            style: Theme.of(context).textTheme.button!.copyWith(
+                                  fontSize: TextSize.xxSmall,
+                                  color: Helpers.getColorFromTheme(
+                                    context: context,
+                                    darkModeColor:
+                                        Theme.of(context).buttonColor,
+                                    lightModeColor:
+                                        Theme.of(context).disabledColor,
+                                  ),
                                 ),
-                              ),
-                        ),
-                        TextSpan(
-                          text: S.of(context).forgotGenderSubtext,
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = navigateToForgot(),
-                          style: Theme.of(context).textTheme.button!.copyWith(
-                                fontSize: TextSize.xxSmall,
-                                decoration: TextDecoration.underline,
-                                color: Helpers.getColorFromTheme(
-                                  context: context,
-                                  darkModeColor: Theme.of(context).accentColor,
-                                  lightModeColor:
-                                      Theme.of(context).primaryColor,
+                          ),
+                          TextSpan(
+                            text: S.of(context).forgotGenderSubtext,
+                            // recognizer: TapGestureRecognizer()
+                            //   ..onTap = navigateToForgot(),
+                            style: Theme.of(context).textTheme.button!.copyWith(
+                                  fontSize: TextSize.xxSmall,
+                                  decoration: TextDecoration.underline,
+                                  color: Helpers.getColorFromTheme(
+                                    context: context,
+                                    darkModeColor:
+                                        Theme.of(context).accentColor,
+                                    lightModeColor:
+                                        Theme.of(context).primaryColor,
+                                  ),
                                 ),
-                              ),
-                        )
-                      ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
